@@ -49,8 +49,8 @@ class Game {
                 $this->image = $row['game_image'];
             }
         } else {
-            // Something went wrong, scream at them
-            $this->title = "OH FUCK ERROR";
+            // Something went wrong, don't scream at them, redirect them somewhere for the moment and come back to this to give them useful feedback
+            header("Location: /");
         }
     }
 

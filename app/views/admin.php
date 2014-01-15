@@ -44,8 +44,11 @@ if(isset($_SESSION['sess_user_id'])){
 
     <?php
         if($admin == false){
+            echo "<article>";
+            echo "<h1>Administration</h1>";
             echo "<h2>Please log in below.</h2>";
             include_once(VIEWPATH . "html/login_form.html");
+            echo "</article>";
         } else {
             switch($adminType){
                 case "pending":
