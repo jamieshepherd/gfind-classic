@@ -43,29 +43,30 @@ if(isset($_SESSION['sess_user_id'])){
     </menu>
 
     <?php
-        switch($adminType){
-            case "pending":
-                include_once(VIEWPATH."admin/pending.php");
-                break;
-            case "edits":
-                include_once(VIEWPATH."admin/edits.php");
-                break;
-            case "reports":
-                include_once(VIEWPATH."admin/reports.php");
-                break;
-            case "releases":
-                include_once(VIEWPATH."admin/releases.php");
-                break;
-            default:
-                echo "<article>";
-                echo "<h1>Welcome</h1>";
-                if($admin == false){
-                    echo "<h2>Please log in below.</h2>";
-                    include_once(VIEWPATH . "html/login_form.html");
-                } else {
+        if($admin == false){
+            echo "<h2>Please log in below.</h2>";
+            include_once(VIEWPATH . "html/login_form.html");
+        } else {
+            switch($adminType){
+                case "pending":
+                    include_once(VIEWPATH."admin/pending.php");
+                    break;
+                case "edits":
+                    include_once(VIEWPATH."admin/edits.php");
+                    break;
+                case "reports":
+                    include_once(VIEWPATH."admin/reports.php");
+                    break;
+                case "releases":
+                    include_once(VIEWPATH."admin/releases.php");
+                    break;
+                default:
+                    echo "<article>";
+                    echo "<h1>Welcome</h1>";
                     echo "<h2>You are logged in</h2>";
                     echo "<p>Welcome <strong>".$_SESSION['sess_username']."</strong>. You are logged in successfully.</p><p> Please use any of the admin options available to you on the left.</p>";
-                }
+                    echo "</article>";
+            }
         }
     ?>
 
