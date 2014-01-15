@@ -1,0 +1,78 @@
+main{
+    width:90%;
+    text-align:center;
+}
+h2 {
+    font-size:200%;
+    color:#f60;
+    margin:0;
+    padding:40px 40px 0 40px;
+}
+p{
+    margin:0;
+    padding:20px 40px 0 40px;
+}
+section {
+    margin:0;
+    padding:0;
+    width:32%;
+    display:inline-block;
+    border:0;
+    text-align:center;
+    vertical-align:top;
+}
+.middle{
+    border-left:1px dashed #999;
+    border-right:1px dashed #999;
+}
+.introduction{
+    background:url("/public/img/cover_bg.jpg") repeat fixed;
+    text-align:center;
+    padding:100px 0;
+    position:relative;
+}
+.introduction h1{
+    margin: 0;
+}
+.introduction h2{
+    margin:0;
+    color:#fff;
+    font-weight:normal;
+    padding-top:10px;
+}
+
+.start-here{
+    position:absolute;
+    top:20px;
+    left:100px;
+}
+
+img {
+    max-width: 85%;
+    height: auto;
+    width: auto; /* ie8 */
+}
+
+@media (max-width: 1110px){
+    section{
+        width:100%;
+        border-bottom:1px dashed #999;
+        padding-bottom:40px;
+    }
+    section:last-of-type{
+        border-bottom:none;
+    }
+    .middle{
+        border-left:none;
+        border-right:none;
+    }
+}
+
+@media (max-width: 600px){
+    main{
+        width:100%;
+    }
+    .start-here{
+        left:20px;
+    }
+}

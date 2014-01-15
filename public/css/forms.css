@@ -1,0 +1,113 @@
+/*
+ *  Form specific styles
+ */
+
+article label {
+    display:block;
+    font-style:italic;
+    font-weight:bold;
+    color:#666;
+}
+article input {
+    display:block;
+    margin:5px 0 10px 0;
+    width:60%;
+    padding:5px;
+    color:#666;
+    font-size:0.9em;
+    outline:none;
+}
+article input[type=checkbox]{
+    /* wat */
+    display:inline-block;
+    width:auto;
+    height:auto;
+}
+article select{
+    display:block;
+    margin:5px 0 20px 0;
+    padding:5px;
+}
+article textarea{
+    display:block;
+    margin:5px 0 20px 0;
+    width:90%;
+    padding:5px;
+    resize:none;
+    color:#666;
+    font-size:0.9em;
+    line-height:170%;
+}
+#imgpreview{
+    margin-top:10px;
+}
+form ul{
+    margin:5px 0;
+}
+form li{
+    display:inline-block;
+    width:26%;
+    margin-bottom:5px;
+}
+
+.hidden{
+    display:none;
+}
+.medinput{
+    width:200px;
+}
+.shortinput{
+    width:50px;
+}
+
+/*
+ * Media queries - do something to sort out when there are no widgets
+ */
+
+@media (max-width: 1300px) {
+    article{
+        width:auto;
+    }
+}
+
+@media (max-width: 1100px) {
+    article{
+        width:auto;
+    }
+}
+
+@media (max-width: 900px){
+    article{
+        width:auto;
+    }
+}
+
+@media (max-width: 750px) {
+    article{
+        width:auto;
+    }
+}
+
+@media (max-width: 600px) {
+    article{
+        width:auto;
+    }
+}
+
+/*
+ * Form validation
+ */
+
+.error {
+    border:1px solid;
+}
+.form-error{
+    width:100%;
+    color:#f60;
+}
+label strong{
+    font-style:normal;
+    font-weight:normal;
+    color:#999;
+    font-size:90%;
+}

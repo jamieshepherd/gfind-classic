@@ -1,0 +1,10 @@
+#Force www:
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^gfind.net [NC]
+RewriteRule ^(.*)$ http://www.gfind.net/$1 [L,R=301,NC]
+
+#--- Rewrite PHP files clean URL
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^([A-Za-z0-9-]+)$ ?page=$1 [NC,L]
+RewriteRule ^([A-Za-z0-9-]+)/([A-Za-z0-9-]+)$ ?page=$1&id=$2 [NC,L]

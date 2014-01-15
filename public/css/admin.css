@@ -1,0 +1,65 @@
+.pending_item{
+    border:1px solid #ccc;
+    margin-bottom:20px;
+}
+.pending_item h3{
+    padding:0 10px;
+    display:inline-block;
+    margin:14px 5px;
+    color:#f60;
+}
+.pending_item input[type=button]{
+    float:right;
+    display:inline-block;
+    height:32px;
+    margin:10px 10px 10px 0;
+    border:none;
+    color:#fff;
+    background:#f60;
+    padding:0 10px;
+    font-size:0.9em;
+}
+.pending_item input[type=button]:hover{
+    background:#f80;
+}
+.pending_item ul{
+    width:30%;
+    margin:10px 15px;
+    padding:10px;
+    float:right;
+    border:1px dashed #999;
+}
+.pending_item li{
+    margin:5px;
+}
+.pending_item p{
+    padding:10px 15px;
+    margin:0;
+    line-height:150%;
+}
+
+/* Clearfix */
+
+.pending_item:before,
+.pending_item:after {
+    content:"";
+    display:table;
+}
+.pending_item:after {
+    clear:both;
+}
+
+/* Form */
+
+article label {
+    display:block;
+    font-style:italic;
+    font-weight:bold;
+    color:#666;
+    margin-bottom:5px;
+}
+article input {
+    display:block;
+    margin-bottom:10px;
+    padding:5px;
+}
